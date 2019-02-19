@@ -18,7 +18,7 @@ Route::middleware(['maintenancemode'])->group(function() {
 	Route::get('/invoices', 'InvoicesController@index');
 
 	// Route -> Controller -> load view
-	Route::get('/', 'AdminController@index');
+	Route::get('/', 'LoginController@index');
 
 	Route::get('/playlists/new', 'PlaylistController@create');
 	Route::get('/playlists/{id}', 'PlaylistController@index');
