@@ -4,6 +4,7 @@
 @section('title', 'Invoices')
 
 @section('main')
+  <h1>Invoices</h1>
   <form action="/" method="get">
     <input type="text" name="search" value="{{$search}}">
     <button type="submit" class="btn btn-primary">Search</button>
