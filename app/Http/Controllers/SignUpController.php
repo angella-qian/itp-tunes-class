@@ -22,7 +22,7 @@ class SignUpController extends Controller
     	$user->save();
 
         Auth::login($user);
-        return redirect('/profile');
+        return redirect('/admin/profile');
 
     	// return redirect('/login');
     }
